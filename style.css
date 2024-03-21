@@ -107,11 +107,45 @@
     color: var(--white);
   }
   .appl{
-    border-radius: 50%;
-    background-color: transparent;
-    color: black;
-    border: #4b3eff;
+    background-color: #094afc;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10%;
   }
+  .appl a{
+    color: white;
+  }
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    border: 1px;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee-scroll 20s linear infinite;
+}
+
+.marquee img {
+    margin-right: 20px; 
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(100%); /* Move the images from right to left */
+    }
+    100% {
+        transform: translateX(-100%); /* Move the images back to the start */
+    }
+}
+
   .nav__menu__btn {
     font-size: 1.5rem;
     color: var(--white);

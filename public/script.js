@@ -45,19 +45,6 @@ ScrollReveal().reveal(".explore__content .section__header", {
   ...scrollRevealOption,
   delay: 500,
 });
-ScrollReveal().reveal(".explore__content .section__description", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-ScrollReveal().reveal(".explore__content .explore__btn", {
-  ...scrollRevealOption,
-  delay: 1500,
-});
-
-ScrollReveal().reveal(".banner__card", {
-  ...scrollRevealOption,
-  interval: 500,
-});
 
 const swiper = new Swiper(".swiper", {
   loop: true,
@@ -72,11 +59,17 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-let count1 = setInterval(updated1, 250);
-let count2 = setInterval(updated2, 200);
-let count3 = setInterval(updated3, 100);
-let count4 = setInterval(updated4, 10);
-let count5 = setInterval(updated5, 3);
+ScrollReveal().reveal(".count", {
+  ...scrollRevealOption,
+  delay: "500",
+});
+
+
+let count1 = setInterval(updated1, 1000);
+let count2 = setInterval(updated2, 500);
+let count3 = setInterval(updated3, 250);
+let count4 = setInterval(updated4, 100);
+let count5 = setInterval(updated5, 60);
 let upto1 = 0;
 let upto2 = 0;
 let upto3 = 0;
@@ -124,3 +117,39 @@ function updated5() {
         clearInterval(count5);
     }
 }
+
+ScrollReveal().reveal(".marquee", {
+  ...scrollRevealOption,
+  delay: "1000",
+});
+
+ScrollReveal().reveal(".special__grid .special__card h2 p", {
+  ...scrollRevealOption,
+  delay: "1000",
+});
+
+ScrollReveal().reveal(".section__header .special__description", {
+  ...scrollRevealOption,
+  delay: "1000",
+});
+
+ScrollReveal().reveal(".section__header .special__description", {
+  ...scrollRevealOption,
+  delay: "1000",
+});
+
+ScrollReveal().reveal(".special_grid", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+
+
+ScrollReveal().reveal(".gallery figure", {
+  ...scrollRevealOption,
+  delay: "1000",
+});
+
+ScrollReveal().reveal(".footer", {
+  ...scrollRevealOption,
+  delay: "1000",
+});
